@@ -3,7 +3,11 @@ class Song
 
   def initialize(name)
     @name = name
+    save
   end
+  
+  def save 
+    
 
   def artist_name=(name)
     self.artist = Artist.find_or_create_by_name(name)
